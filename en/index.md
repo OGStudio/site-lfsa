@@ -6,30 +6,57 @@ Lang: en
 
 ## Overview
 
-Local File System Access (LFSA) is a data provider for Client Side Web (CSW) apps.
+Local File System Access (LFSA) is:
 
-LFSA was created to allow web browser application access local file system.
+* a tiny web server to allow client side JS access to local file system
+* a buildling block for Client Side Web Apps (CSWA)
+* a single Python file
 
-CSW apps run solely on your device, they are not related to cloud solution in any way.
+## CSWA
 
-CSW apps use LFSA to keep data at your hard drive, so you have complete control of your data.
+Client Side Web Apps run solely on your device, they are not related to cloud solutions in any way: nobody can pull the plug on you.
+CSWAs use LFSA to keep data at your hard drive, so you have complete control of your data.
 
-Since CSW apps run on your device, nobody can pull the plug on you.
+[PSKOV][pskov] static site generator is the first CSWA to use LFSA.
 
-You should have come here from [PSKOV][pskov].
+## Install
 
-## Install on Windows
+If you use Linux or macOS released after 2005 (yes, 2005), you only need to [download lfsa-201905.py][lfsa-local].
 
-TODO W2K
+If you use Windows 2000 or newer (excluding Windows ME), you need to:
 
-TODO VIDEO embedded? youtube?
+* [download][python] and install Python 2.3 or newer
+* [download lfsa-201905.py][lfsa-local]
 
-## Install on Linux
+## Run
 
-TODO Ubuntu 06.10
+If you use Linux or macOS, run LFSA in Terminal this way:
 
-# Install on macOS
+```
+/path/to/lfsa-201905.py /path/to/dir
+```
 
-TODO Mojave
+Here's how it looks like on macOS Mojave:
+
+![LFSA on macOS Mojave][lfsa-on-macos]
+
+If you use Windows, run LFSA in [CMD][cmd] this way:
+
+```
+C:/path/to/Python/installation/python.exe C:/path/to/lfsa-201905.py C:/path/to/dir
+```
+
+Here's how it looks like on Windows 2000:
+
+![LFSA on Windows 2000][lfsa-on-windows]
+
+## Durability
+
+As you noticed, LFSA can run on really old operating systems dating back to 2000. That's intentional: we care about users, so we want to cover as many users as possible.
 
 [pskov]: http://opengamestudio.org/pskov
+[lfsa-local]: ../lfsa-201905.py
+[python]: https://www.python.org/downloads/windows/
+[cmd]: https://en.wikipedia.org/wiki/Cmd.exe
+[lfsa-on-macos]: ../img/lfsa-on-macos.png
+[lfsa-on-windows]: ../img/lfsa-on-windows.png

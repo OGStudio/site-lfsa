@@ -5,5 +5,10 @@ site-pskov.UI.Menu
 site-pskov.UI.Contents
 site-pskov.UI.ContentsTitle
 
+site-lfsa.Style
 site-lfsa.UI.Title
+site-lfsa.UI.Title-ru
 site-lfsa.UI.Menu
+site-lfsa.UI.Footer
+site-lfsa.UI.Footer-ru
+site-lfsa.UI.Lang
